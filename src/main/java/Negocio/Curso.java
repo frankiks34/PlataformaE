@@ -4,21 +4,41 @@
  */
 package Negocio;
 
-/**
- *
- * @author Frank
- */
+import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+
+
+
+@Entity
 public class Curso {
- 
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int codigo;
+  
+     @ManyToOne
+    @JoinColumn(name="curso")
+    private List<Inscripcion> inscritos;
+     
     private String nombre;
     private Double precio;
+    @ManyToOne
+    @JoinColumn(name="id_profesor")
+    private Profesor profesor;
 
-    public Curso(int codigo, String nombre, Double precio) {
+    public Curso(int codigo,List<Inscripcion> inscrito , String nombre, Double precio ,Profesor profesor) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
+       this.profesor=profesor;
+       inscritos = inscrito;
     }
+    
 
     public int getCodigo() {
         return codigo;
@@ -42,6 +62,22 @@ public class Curso {
 
     public void setPrecio(Double precio) {
         this.precio = precio;
+    }
+
+    public Profesor getProfesor() {
+        return profesor;
+    }
+
+    public void setProfesor(Profesor profesor) {
+        this.profesor = profesor;
+    }
+
+    public List<Inscripcion> getInscritos() {
+        return inscritos;
+    }
+
+    public void setInscritos(List<Inscripcion> inscritos) {
+        this.inscritos = inscritos;
     }
     
     

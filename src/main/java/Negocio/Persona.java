@@ -23,13 +23,17 @@ public class Persona {
     private int codigo;
     private String Nombre;
     private String Apellido;
+    private String email;
+    private String contrasenia;
     private int edad;
 
-    public Persona(int codigo, String Nombre, String Apellido, int edad) {
+    public Persona(int codigo, String Nombre, String Apellido,String email,String contrasenia, int edad) {
         this.codigo = codigo;
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.edad = edad;
+        this.email=email;
+        this.contrasenia=contrasenia;
     }
 
     public int getCodigo() {
@@ -62,6 +66,22 @@ public class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getContrasenia() {
+        return contrasenia;
+    }
+
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
     }
     
     

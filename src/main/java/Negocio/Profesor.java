@@ -4,20 +4,32 @@
  */
 package Negocio;
 
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
 /**
  *
  * @author Frank
  */
+
+@Entity
 public class Profesor extends Persona{
 
+     @OneToMany(mappedBy="profesor")
+     private List<Curso> lista =new ArrayList<Curso>();
+     
    private String Nomtitulo;
    private String Carrera;
+  
 
-    public Profesor(String Nomtitulo, String Carrera,int codigo, String Nombre, String Apellido, int edad) {
+    public Profesor(String Nomtitulo, String Carrera, List<Curso> frank ,int codigo, String Nombre, String Apellido,String email,String contrasenia ,int edad) {
        
-        super( codigo , Nombre , Apellido , edad );
+        super( codigo , Nombre , Apellido,email,contrasenia , edad );
         this.Nomtitulo = Nomtitulo;
         this.Carrera = Carrera;
+        frank=lista;
     }
 
     public String getNomtitulo() {
@@ -35,6 +47,16 @@ public class Profesor extends Persona{
     public void setCarrera(String Carrera) {
         this.Carrera = Carrera;
     }
+
+    public List<Curso> getLista() {
+        return lista;
+    }
+
+    public void setLista(List<Curso> lista) {
+        this.lista = lista;
+    }
+
+
     
    
     

@@ -4,16 +4,27 @@
  */
 package Negocio;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
 /**
  *
  * @author Frank
  */
 public class Reseña {
     
-    
+     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+     
+     
     private String comentario;
+    
+    @OneToOne
     private Estudiante estudiante;
+    @OneToOne
     private Curso curso;
 
     public Reseña(int id, String comentario, Estudiante estudiante, Curso curso) {
