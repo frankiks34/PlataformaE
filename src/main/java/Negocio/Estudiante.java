@@ -14,12 +14,14 @@ import javax.persistence.OneToMany;
  */
 
  @Entity
-public class Estudiante extends Persona{
+public class Estudiante extends Usuario{
     
+      @OneToMany(mappedBy="estudiante")
+     private List<Inscripcion> inscripcion;
+     
     private String Universidad;
     
-     @OneToMany(mappedBy="estudiante")
-     private List<Inscripcion> inscripcion;
+    
 
     public Estudiante(String universidad ,List<Inscripcion> inscripcione ,int codigo, String Nombre, String Apellido,String email,String contrasenia, int edad) {
         super(codigo, Nombre, Apellido, email, contrasenia , edad);

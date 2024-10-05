@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
  */
 
 @Entity
-public class Profesor extends Persona{
+public class Profesor extends Usuario{
 
      @OneToMany(mappedBy="profesor")
      private List<Curso> lista =new ArrayList<Curso>();

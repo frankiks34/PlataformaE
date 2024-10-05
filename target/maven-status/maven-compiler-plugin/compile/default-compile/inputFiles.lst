@@ -1,4 +1,15 @@
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\EstudianteJpaController.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\PersonaJpaController.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Negocio\Inscripcion.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\ReseniaJpaController.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\CursoJpaController.java
 C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Negocio\Estudiante.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\exceptions\PreexistingEntityException.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\ProfesorJpaController.java
 C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Negocio\Profesor.java
-C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\servelest\registro.java
-C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Negocio\Persona.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Negocio\Reseña.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Negocio\Usuario.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Negocio\Curso.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\exceptions\NonexistentEntityException.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\exceptions\IllegalOrphanException.java
+C:\Users\Frank\Documents\NetBeansProjects\practica3\src\main\java\Persistencia\InscripcionJpaController.java
