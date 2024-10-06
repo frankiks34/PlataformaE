@@ -4,6 +4,7 @@
  */
 package Negocio;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -17,17 +18,17 @@ import javax.persistence.OneToMany;
 public class Estudiante extends Usuario{
     
       @OneToMany(mappedBy="estudiante")
-     private List<Inscripcion> inscripcion;
+     private List<Inscripcion> inscripcion = new ArrayList<Inscripcion>();
      
     private String Universidad;
     
     
 
-    public Estudiante(String universidad ,List<Inscripcion> inscripcione ,int codigo, String Nombre, String Apellido,String email,String contrasenia, int edad) {
-        super(codigo, Nombre, Apellido, email, contrasenia , edad);
+    public Estudiante(String universidad ,int codigo, String Nombre, String Apellido,String email,String contrasenia, int edad) {
+        super(codigo, Nombre, Apellido, email, contrasenia);
         
         this.Universidad=universidad;
-        inscripcion = inscripcione;
+        
     }
 
     public String getUniversidad() {
@@ -37,6 +38,15 @@ public class Estudiante extends Usuario{
     public void setUniversidad(String Universidad) {
         this.Universidad = Universidad;
     }
+
+    public List<Inscripcion> getInscripcion() {
+        return inscripcion;
+    }
+
+    public void setInscripcion(List<Inscripcion> inscripcion) {
+        this.inscripcion = inscripcion;
+    }
+    
     
     
     

@@ -20,25 +20,27 @@ public class Profesor extends Usuario{
      @OneToMany(mappedBy="profesor")
      private List<Curso> lista =new ArrayList<Curso>();
      
-   private String Nomtitulo;
+   private int experiancia;
    private String Carrera;
   
 
-    public Profesor(String Nomtitulo, String Carrera, List<Curso> frank ,int codigo, String Nombre, String Apellido,String email,String contrasenia ,int edad) {
+    public Profesor(int experiencia, String Carrera,int codigo, String Nombre, String Apellido,String email,String contrasenia ,int edad) {
        
-        super( codigo , Nombre , Apellido,email,contrasenia , edad );
-        this.Nomtitulo = Nomtitulo;
+        super( codigo , Nombre , Apellido,email,contrasenia);
+       this.experiancia =experiencia;
         this.Carrera = Carrera;
-        frank=lista;
+      
     }
 
-    public String getNomtitulo() {
-        return Nomtitulo;
+    public int getExperiancia() {
+        return experiancia;
     }
 
-    public void setNomtitulo(String Nomtitulo) {
-        this.Nomtitulo = Nomtitulo;
+    public void setExperiancia(int experiancia) {
+        this.experiancia = experiancia;
     }
+
+   
 
     public String getCarrera() {
         return Carrera;

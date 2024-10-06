@@ -25,13 +25,13 @@ public class Usuario {
     private String Apellido;
     private String email;
     private String contrasenia;
-    private int edad;
+   
 
-    public Usuario(int codigo, String Nombre, String Apellido,String email,String contrasenia, int edad) {
+    public Usuario(int codigo, String Nombre, String Apellido,String email,String contrasenia) {
         this.codigo = codigo;
         this.Nombre = Nombre;
         this.Apellido = Apellido;
-        this.edad = edad;
+
         this.email=email;
         this.contrasenia=contrasenia;
     }
@@ -59,15 +59,6 @@ public class Usuario {
     public void setApellido(String Apellido) {
         this.Apellido = Apellido;
     }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     public String getEmail() {
         return email;
     }

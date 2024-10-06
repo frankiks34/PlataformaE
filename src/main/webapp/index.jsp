@@ -1,80 +1,158 @@
-<%-- 
-    Document   : index
-    Created on : 3 oct. 2024, 12:03:47 p. m.
-    Author     : Frank
---%>
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-         <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        form {
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin: auto;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Plataforma de Cursos Online</title>
     
-    
-      <%
-  String frank =(String)request.getSession().getAttribute("a");
-                                    %>
-    
-    <body>
-       <h2>Registro</h2>
-    <form action="registro" method="POST">
-        
-        <h1>Nota Final</h1>
-    <label for="nombre">Examen Parcial:</label>
-    <input type="text" id="notas1" name="notas1" >
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+   
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">LearnHub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#instructores">Instructores</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mis-cursos">Mis Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="loginPa.jsp">Iniciar sesion</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    
-    <label for="nombre">Examen Finak:</label>
-    <input type="text" id="notas2" name="notas2" >
 
-     <label for="nombre">Practica Calificada 1</label>
-    <input type="text" id="notas3" name="notas3" >
-    
-     <label for="nombre">Practica Calificada 2</label>
-    <input type="text" id="notas4" name="notas4" >
-    <tr>
-    <td><%=frank %> </td>
-    <tr>
-    <input type="submit" value="Calcular">
-</form>
-    </body>
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <h1 class="masthead-heading text-uppercase mb-0">Bienvenido a la Plataforma de Cursos</h1>
+        <p class="masthead-subheading font-weight-light mb-0">Aprende a tu ritmo, con los mejores instructores</p>
+    </div>
+</header>
+
+
+<section class="page-section" id="cursos">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Cursos Populares</h2>
+            <h3 class="section-subheading text-muted">Explora los cursos más demandados</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/course1.jpg" alt="Curso 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Java</h5>
+                        <p class="card-text">Aprende Java desde cero hasta avanzado.</p>
+                        <a href="#" class="btn btn-primary">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/course2.jpg" alt="Curso 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Python</h5>
+                        <p class="card-text">Domina Python y sus frameworks más populares.</p>
+                        <a href="#" class="btn btn-primary">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/course3.jpg" alt="Curso 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Desarrollo Web</h5>
+                        <p class="card-text">Crea aplicaciones web dinámicas con HTML, CSS y JavaScript.</p>
+                        <a href="#" class="btn btn-primary">Ver curso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="page-section bg-light" id="instructores">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Nuestros Instructores</h2>
+            <h3 class="section-subheading text-muted">Conoce a los profesionales detrás de los cursos</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="Instructor 1" />
+                    <h4>Parveen Anand</h4>
+                    <p class="text-muted">Java Expert</p>
+                </div> 
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="Instructor 2" />
+                    <h4>Diana Petersen</h4>
+                    <p class="text-muted">Data Scientist</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="Instructor 3" />
+                    <h4>Larry Parker</h4>
+                    <p class="text-muted">Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contacto</h2>
+            <h3 class="section-subheading text-muted">¿Tienes alguna pregunta? ¡Escríbenos!</h3>
+        </div>
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <input class="form-control" id="name" type="text" placeholder="Tu Nombre *" required />
+                    <input class="form-control" id="email" type="email" placeholder="Tu Email *" required />
+                    <input class="form-control" id="phone" type="tel" placeholder="Tu Teléfono *" required />
+                </div>
+                <div class="col-md-6">
+                    <textarea class="form-control" id="message" placeholder="Tu Mensaje *" required></textarea>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Enviar Mensaje</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<footer class="footer bg-dark text-white">
+    <div class="container text-center">
+        <small>&copy; 2024 Mi Plataforma de Cursos - Todos los derechos reservados</small>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
