@@ -8,47 +8,55 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 /**
  *
  * @author Frank
  */
 
- @Entity
-public class Estudiante extends Usuario{
-    
-      @OneToMany(mappedBy="estudiante")
-     private List<Inscripcion> inscripcion = new ArrayList<Inscripcion>();
-     
-    private String Universidad;
-    
-    
+   @Entity
+   public class Estudiante extends Usuario{
 
-    public Estudiante(String universidad ,int codigo, String Nombre, String Apellido,String email,String contrasenia, int edad) {
-        super(codigo, Nombre, Apellido, email, contrasenia);
-        
-        this.Universidad=universidad;
-        
-    }
+         @OneToMany(mappedBy="estudiante")
+        private List<Inscripcion> inscripcion;
 
-    public String getUniversidad() {
-        return Universidad;
-    }
+       private String Universidad;
 
-    public void setUniversidad(String Universidad) {
-        this.Universidad = Universidad;
-    }
 
-    public List<Inscripcion> getInscripcion() {
-        return inscripcion;
-    }
 
-    public void setInscripcion(List<Inscripcion> inscripcion) {
-        this.inscripcion = inscripcion;
-    }
-    
-    
-    
-    
-    
-}
+
+       public Estudiante(String universidad ,int codigo, String Nombre, String Apellido,String email,String contrasenia) {
+           super(codigo, Nombre, Apellido, email, contrasenia);
+
+           this.Universidad=universidad;
+           inscripcion = new ArrayList<Inscripcion>();
+       }
+
+
+       public Estudiante(){
+
+       }
+
+
+       public String getUniversidad() {
+           return Universidad;
+       }
+
+       public void setUniversidad(String Universidad) {
+           this.Universidad = Universidad;
+       }
+
+       public List<Inscripcion> getInscripcion() {
+           return inscripcion;
+       }
+
+       public void setInscripcion(List<Inscripcion> inscripcion) {
+           this.inscripcion = inscripcion;
+       }
+
+
+
+
+
+   }

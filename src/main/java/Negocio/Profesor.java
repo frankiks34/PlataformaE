@@ -32,6 +32,11 @@ public class Profesor extends Usuario{
       
     }
 
+    public Profesor()
+    {
+    }
+    
+    
     public int getExperiancia() {
         return experiancia;
     }

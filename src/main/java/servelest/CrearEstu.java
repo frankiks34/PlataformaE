@@ -40,11 +40,18 @@ public class CrearEstu extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      
-          String nombreUsuario = request.getParameter("nombreusu");
-         String contra = request.getParameter("contrasenia");
-        String rol= request.getParameter("rol");
         
+      String universidad = request.getParameter("universidad");
+          String nombreUsuario = request.getParameter("nombre");
+          String apellido =request.getParameter("Apellido");
+             String email =request.getParameter("email");
+         String contra = request.getParameter("password");
+        
+        
+        
+       control.crearestudiante( nombreUsuario, apellido,  email,contra ,universidad);
+        
+      
         
     }
 

@@ -36,6 +36,11 @@ public class Usuario {
         this.contrasenia=contrasenia;
     }
 
+      public Usuario() {
+ 
+    }
+    
+    
     public int getCodigo() {
         return codigo;
     }

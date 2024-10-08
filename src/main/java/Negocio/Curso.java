@@ -12,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 
 
@@ -22,8 +23,7 @@ public class Curso implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int codigo;
   
-     @ManyToOne
-    @JoinColumn(name="curso")
+      @OneToMany(mappedBy="curso")
     private List<Inscripcion> inscritos;
      
     private String nombre;
@@ -38,6 +38,12 @@ public class Curso implements Serializable {
         this.precio = precio;
        this.profesor=profesor;
        inscritos = inscrito;
+    }
+    
+    
+    public Curso()
+    {
+    
     }
     
 

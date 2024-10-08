@@ -14,10 +14,20 @@ public class Controlador {
     
     ControladorPersistencia control = new ControladorPersistencia();
     
-    public void crearestudiante(){
-     
     
-    
+
+    public void crearestudiante(String nombreUsuario, String apellido, String email, String contra, String universidad) {
+  
+        
+         Estudiante estudi = new Estudiante();
+          
+         estudi.setApellido(apellido);
+         estudi.setContrasenia(contra);
+         estudi.setNombre(nombreUsuario);
+         estudi.setEmail(email);
+        estudi.setUniversidad(universidad);
+        control.Crearestudiante(estudi);
+        
     }
     
     

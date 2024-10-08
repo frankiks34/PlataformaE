@@ -40,6 +40,12 @@ public class Inscripcion {
         this.calificacion = calificacion;
     }
 
+    public Inscripcion()
+    {
+    
+    }
+    
+    
     public int getCode() {
         return code;
     }

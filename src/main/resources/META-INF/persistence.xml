@@ -8,13 +8,16 @@
     <class>Negocio.Profesor</class>
     <class>Negocio.Persona</class>
     <class>Negocio.Reseña</class>
+    <class>Negocio.Usuario</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=plataforma"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=plataforma;encrypt=true;trustServerCertificate=true"/>
       <property name="javax.persistence.jdbc.user" value="userfrank"/>
       <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
       <property name="javax.persistence.jdbc.password" value="12345"/>
       <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <property name="eclipselink.logging.level.sql" value="FINE"/>
     </properties>
   </persistence-unit>
 </persistence>

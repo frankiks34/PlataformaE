@@ -33,6 +33,12 @@ public class Reseña{
         this.curso = curso;
     }
 
+    
+    public Reseña(){
+    
+    }
+    
+    
     public int getId() {
         return id;
     }

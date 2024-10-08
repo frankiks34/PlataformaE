@@ -34,7 +34,7 @@ usuario = new UsuarioJpaController();
   public void Crearestudiante(Estudiante a){
   
       estudiante.create(a);
-  
+
   }
    
    

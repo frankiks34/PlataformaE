@@ -1,12 +1,12 @@
 package Negocio;
 
 import Negocio.Inscripcion;
-import javax.annotation.Generated;
+import javax.annotation.processing.Generated;
 import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.7.12.v20230209-rNA", date="2024-10-06T15:57:18")
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2024-10-08T15:51:28", comments="EclipseLink-2.7.12.v20230209-rNA")
 @StaticMetamodel(Estudiante.class)
 public class Estudiante_ extends Usuario_ {
 

@@ -55,7 +55,7 @@
                        
                         <div class="form-group mb-3">
                             <label for="cursoActual">Universidad o colegio</label>
-                            <input type="text" class="form-control" id="cursoActual" name="cursoActual">
+                            <input type="text" class="form-control" id="universidad" name="universidad">
                         </div>
                     </div>
 
@@ -104,7 +104,7 @@
             // Cambiar el action del formulario dependiendo del tipo seleccionado
             const form = document.getElementById('form-registro');
             if (tipo === 'estudiante') {
-                form.action = 'CrearAlumnoServlet'; // Redirigir a CrearAlumnoServlet
+                form.action = 'CrearEstu'; // Redirigir a CrearAlumnoServlet
             } else if (tipo === 'profesor') {
                 form.action = 'CrearProfesorServlet'; // Redirigir a CrearProfesorServlet
             }
