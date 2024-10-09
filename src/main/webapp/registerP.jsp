@@ -64,7 +64,7 @@
                         <h4 class="mt-4">Información Adicional de Profesor</h4>
                         <div class="form-group mb-3">
                             <label for="especialidad">Carrera</label>
-                            <input type="text" class="form-control" id="especialidad" name="especialidad">
+                            <input type="text" class="form-control" id="carrera" name="carrera">
                         </div>
                         <div class="form-group mb-3">
                             <label for="experiencia">Años de Experiencia</label>
@@ -106,7 +106,7 @@
             if (tipo === 'estudiante') {
                 form.action = 'CrearEstu'; // Redirigir a CrearAlumnoServlet
             } else if (tipo === 'profesor') {
-                form.action = 'CrearProfesorServlet'; // Redirigir a CrearProfesorServlet
+                form.action = 'crearProfe'; // Redirigir a CrearProfesorServlet
             }
         }
     </script>

@@ -18,7 +18,7 @@ import javax.persistence.OneToMany;
 public class Profesor extends Usuario{
 
      @OneToMany(mappedBy="profesor")
-     private List<Curso> lista =new ArrayList<Curso>();
+     private List<Curso> lista;
      
    private int experiancia;
    private String Carrera;
@@ -29,7 +29,7 @@ public class Profesor extends Usuario{
         super( codigo , Nombre , Apellido,email,contrasenia);
        this.experiancia =experiencia;
         this.Carrera = Carrera;
-      
+      lista =new ArrayList<Curso>();
     }
 
     public Profesor()

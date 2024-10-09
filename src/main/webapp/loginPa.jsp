@@ -1,9 +1,3 @@
-<%-- 
-    Document   : loginPa
-    Created on : 5 oct. 2024, 4:04:11 p. m.
-    Author     : Frank
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,16 +7,32 @@
     <title>Iniciar Sesión</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn-active {
+            background-color: #007bff; /* Cambia el color según lo que prefieras */
+            color: white;
+        }
+        .btn-inactive {
+            background-color: #e9ecef; /* Color por defecto */
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    
     <!-- Login Form -->
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h2 class="text-center">Iniciar Sesión</h2>
-                <form action="LoginServlet" method="POST" class="border p-4 rounded">
+
+                <div class="d-flex justify-content-center mb-3">
+                    <button id="btnEstudiante" class="btn btn-inactive mx-2" onclick="setUserType('Estudiante')">Estudiante</button>
+                    <button id="btnMaestro" class="btn btn-inactive mx-2" onclick="setUserType('Maestro')">Maestro</button>
+                </div>
+
+                <form id="loginForm" action="LoginServlet" method="POST" class="border p-4 rounded">
+                    <input type="hidden" id="userType" name="userType" value="">
+
                     <div class="form-group mb-3">
                         <label for="email">Correo Electrónico</label>
                         <input type="email" class="form-control" id="email" name="email" required>
@@ -47,5 +57,31 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function setUserType(type) {
+            // Actualiza el tipo de usuario
+            document.getElementById('userType').value = type;
+
+            // Cambia la acción del formulario según el tipo de usuario
+            document.getElementById('loginForm').action = type === 'Estudiante' ? 'EstudianteServlet' : 'MaestroServlet';
+
+            // Cambia el estilo de los botones
+            const btnEstudiante = document.getElementById('btnEstudiante');
+            const btnMaestro = document.getElementById('btnMaestro');
+
+            if (type === 'Estudiante') {
+                btnEstudiante.classList.add('btn-active');
+                btnEstudiante.classList.remove('btn-inactive');
+                btnMaestro.classList.add('btn-inactive');
+                btnMaestro.classList.remove('btn-active');
+            } else {
+                btnMaestro.classList.add('btn-active');
+                btnMaestro.classList.remove('btn-inactive');
+                btnEstudiante.classList.add('btn-inactive');
+                btnEstudiante.classList.remove('btn-active');
+            }
+        }
+    </script>
 </body>
 </html>

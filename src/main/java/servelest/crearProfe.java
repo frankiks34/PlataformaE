@@ -4,6 +4,7 @@
  */
 package servelest;
 
+import Negocio.Controlador;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -19,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "crearProfe", urlPatterns = {"/crearProfe"})
 public class crearProfe extends HttpServlet {
 
-  
+   Controlador control = new Controlador();
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        
@@ -29,7 +30,12 @@ public class crearProfe extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+      
+        
+        
+        
+        
+        
     }
 
 
@@ -37,7 +43,24 @@ public class crearProfe extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
+        
+         int a =0;
+          
+          String nombreUsuario = request.getParameter("nombre");
+          String apellido =request.getParameter("Apellido");
+             String email =request.getParameter("email");
+         String contra = request.getParameter("password");
+         String experianci =request.getParameter("experiencia");
+         String carrera = request.getParameter("carrera");
+         
+        
+                 
+                a= Integer.parseInt(experianci);
+         
+           control.crearmaestro( nombreUsuario, apellido,  email, contra , a , carrera);
+        
+         
     }
 
  

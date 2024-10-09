@@ -12,7 +12,6 @@ Negocio\Usuario_.class
 Negocio\Curso.class
 Persistencia\ReseñaJpaController.class
 Negocio\Profesor_.class
-servelest\SVregistrar.class
 Negocio\Estudiante_.class
 Negocio\Curso_.class
 Persistencia\EstudianteJpaController.class
@@ -21,5 +20,6 @@ Persistencia\ControladorPersistencia.class
 Persistencia\exceptions\PreexistingEntityException.class
 Negocio\Usuario.class
 Negocio\Reseña.class
+servelest\crearProfe.class
 Persistencia\CursoJpaController.class
 Negocio\Inscripcion.class

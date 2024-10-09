@@ -5,6 +5,7 @@
 package Persistencia;
 
 import Negocio.Estudiante;
+import Negocio.Profesor;
 
 /**
  *
@@ -36,6 +37,12 @@ usuario = new UsuarioJpaController();
       estudiante.create(a);
 
   }
+
+    public void Crearprofesor(Profesor profe) {
+    
+     profeso.create(profe);
+
+    }
    
    
     

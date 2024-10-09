@@ -30,6 +30,24 @@ public class Controlador {
         
     }
     
+    public void crearmaestro(String nombreUsuario, String apellido, String email, String contra, int experiencia , String carrera)
+    {
+      
+        Profesor profe = new Profesor();
+        
+        profe.setApellido(apellido);
+        profe.setCarrera(carrera);
+        profe.setContrasenia(contra);
+        profe.setEmail(email);
+        profe.setExperiancia(experiencia);
+       profe.setNombre(contra);
+        
+        
+        control.Crearprofesor(profe);
+        
+        
+    }
+    
     
     
 }
