@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <style>
         .btn-active {
             background-color: #007bff; /* Cambia el color según lo que prefieras */
@@ -30,7 +30,7 @@
                     <button id="btnMaestro" class="btn btn-inactive mx-2" onclick="setUserType('Maestro')">Maestro</button>
                 </div>
 
-                <form id="loginForm" action="LoginServlet" method="POST" class="border p-4 rounded">
+                <form id="loginForm" action="loginE" method="POST" class="border p-4 rounded">
                     <input type="hidden" id="userType" name="userType" value="">
 
                     <div class="form-group mb-3">
@@ -60,11 +60,12 @@
 
     <script>
         function setUserType(type) {
-            // Actualiza el tipo de usuario
-            document.getElementById('userType').value = type;
+            // Actualiza el tipo de usuario y su valor
+            document.getElementById('userType').value = type === 'Estudiante' ? '1' : '2';
+
 
             // Cambia la acción del formulario según el tipo de usuario
-            document.getElementById('loginForm').action = type === 'Estudiante' ? 'EstudianteServlet' : 'MaestroServlet';
+           document.getElementById('loginForm').action = 'loginE';
 
             // Cambia el estilo de los botones
             const btnEstudiante = document.getElementById('btnEstudiante');

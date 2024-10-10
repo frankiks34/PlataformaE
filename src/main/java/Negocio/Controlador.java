@@ -5,6 +5,8 @@
 package Negocio;
 
 import Persistencia.ControladorPersistencia;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -47,7 +49,54 @@ public class Controlador {
         
         
     }
+
+    public boolean comprobaringresoP(String correo, String contrasenia) {
+             
+         boolean ingreso =false;
+        List<Profesor> lista = new ArrayList<Profesor>();
+        
+        lista=control.getProfesores();
+        
+       for (Profesor pro : lista) {
+           if (pro.getEmail().equals(correo)) {
+               if (pro.getContrasenia().equals(contrasenia)) {
+                   ingreso = true;
+               }
+               else{         
+                  ingreso=false ;          
+               }      
+           }
+       }
     
+       return ingreso;
     
+    }
+    
+     public boolean comprobaringresoE(String correo, String contrasenia) {
+             
+         boolean ingreso =false;
+        List<Estudiante> lista = new ArrayList<Estudiante>();
+        
+        System.out.println("Valor de userType recibido: " + correo); // Línea añadida para depuración
+
+        
+        lista=control.getEstudiante();
+        
+       for (Estudiante pro : lista) {
+           if (pro.getEmail().equals(correo)) {
+               if (pro.getContrasenia().equals(contrasenia)) {
+                   ingreso = true;
+               }
+               else{         
+                  ingreso=false ;          
+               }      
+           }
+       }
+    
+       return ingreso;
+    
+    }
+     
+     
     
 }

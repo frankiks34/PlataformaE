@@ -6,6 +6,7 @@ package Persistencia;
 
 import Negocio.Estudiante;
 import Negocio.Profesor;
+import java.util.List;
 
 /**
  *
@@ -44,7 +45,19 @@ usuario = new UsuarioJpaController();
 
     }
    
-   
+      public List<Profesor> getProfesores() {
+        return profeso.findProfesorEntities(); 
+    }
+     public Profesor getProfesor(int d) {
+         return profeso.findProfesor(d);
+    }
+
+    public List<Estudiante> getEstudiante() {
+       
+    return estudiante.findEstudianteEntities();
+    }
+    
+  
     
     
 }

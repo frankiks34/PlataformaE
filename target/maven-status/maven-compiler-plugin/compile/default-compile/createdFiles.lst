@@ -1,5 +1,6 @@
 Persistencia\exceptions\IllegalOrphanException.class
 Persistencia\exceptions\NonexistentEntityException.class
+servelest\loginE.class
 servelest\CrearEstu.class
 Negocio\Estudiante.class
 Negocio\Profesor.class
