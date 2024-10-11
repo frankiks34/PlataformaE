@@ -57,6 +57,12 @@ usuario = new UsuarioJpaController();
     return estudiante.findEstudianteEntities();
     }
     
+   public void editarprofesor(Profesor a) throws Exception 
+   {
+   
+      profeso.edit(a);
+       
+   }
   
     
     

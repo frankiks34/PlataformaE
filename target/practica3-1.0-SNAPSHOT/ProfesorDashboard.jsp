@@ -2,7 +2,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
   <% HttpSession misession = request.getSession();
-    String profesor =(String)request.getSession().getAttribute("profesor");
+    Profesor profesor =(Profesor)request.getSession().getAttribute("profesor");
     
     if (profesor==null) {
             response.sendRedirect("sinLogin.jsp");
@@ -36,7 +36,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="MisCursos.jsp">Mis Cursos</a></li>
                 <li class="nav-item"><a class="nav-link" href="MiPerfil.jsp">Mi Perfil</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.jsp">Cerrar Sesión</a></li>
+                <li class="nav-item"><a class="nav-link" href="cerrar_Sesion">Cerrar Sesión</a></li>
             </ul>
         </div>
     </div>

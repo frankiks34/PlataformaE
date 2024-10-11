@@ -5,6 +5,8 @@
 package servelest;
 
 import Negocio.Controlador;
+import Negocio.Estudiante;
+import Negocio.Profesor;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -67,12 +69,23 @@ public class loginE extends HttpServlet {
                }
         }
         else{
+            
+             Profesor profesor = new Profesor();
+            
            validacion = control.comprobaringresoP(correo,contrasenia);
-              
+          
+           
+           
+            
              if (validacion==true) {
+                 
+            profesor =control.buscarprofesor(correo);
+           
+           
+            
             HttpSession misession= request.getSession(true);
            
-            misession.setAttribute("profesor",correo );
+            misession.setAttribute("profesor",profesor );
            response.sendRedirect("ProfesorDashboard.jsp");
         }
                

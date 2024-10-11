@@ -60,7 +60,7 @@ public class crearProfe extends HttpServlet {
          
            control.crearmaestro( nombreUsuario, apellido,  email, contra , a , carrera);
         
-         
+          response.sendRedirect("loginPa.jsp");
     }
 
  

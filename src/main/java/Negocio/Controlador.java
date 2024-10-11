@@ -42,7 +42,7 @@ public class Controlador {
         profe.setContrasenia(contra);
         profe.setEmail(email);
         profe.setExperiancia(experiencia);
-       profe.setNombre(contra);
+       profe.setNombre(nombreUsuario);
         
         
         control.Crearprofesor(profe);
@@ -96,6 +96,40 @@ public class Controlador {
        return ingreso;
     
     }
+
+    public Profesor buscarprofesor(String correo) {
+        
+        List<Profesor> lista = new ArrayList<Profesor>();
+        
+       int a=0;
+
+        
+        lista=control.getProfesores();
+        
+   
+        
+        
+       for (Profesor pro : lista) {
+           if (pro.getEmail().equals(correo)) {
+              
+             return pro;
+           }
+            
+       }
+         return null;
+       
+    }
+
+    public void editarprofesor(Profesor profe) throws Exception{
+       
+        
+        control.editarprofesor(profe);
+      
+    }
+    
+     
+    
+    
      
      
     

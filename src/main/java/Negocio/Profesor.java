@@ -36,6 +36,13 @@ public class Profesor extends Usuario{
     {
     }
     
+    @Override
+   public int getCodigo() {
+        return super.getCodigo();
+    }
+    
+    
+    
     
     public int getExperiancia() {
         return experiancia;
