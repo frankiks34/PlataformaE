@@ -40,7 +40,7 @@
                 <li class="nav-item"><a class="nav-link" href="Cursos.jsp">Explorar Cursos</a></li>
                 <li class="nav-item"><a class="nav-link" href="MiPerfilEstudiante.jsp">Mi Perfil</a></li>
                 <li class="nav-item"><a class="nav-link" href="BolsaCompras.jsp">Bolsa de Compras</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.jsp">Cerrar Sesión</a></li>
+                <li class="nav-item"><a class="nav-link" href="cerrar_Sesion">Cerrar Sesión</a></li>
             </ul>
         </div>
     </div>

@@ -5,12 +5,14 @@
 package Negocio;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
@@ -30,20 +32,47 @@ public class Curso implements Serializable {
     private Double precio;
     @ManyToOne
     @JoinColumn(name="id_profesor")
-    private Profesor profesor;
-
-    public Curso(int codigo,List<Inscripcion> inscrito , String nombre, Double precio ,Profesor profesor) {
+     private Profesor profesor;
+   
+      @Lob 
+      private byte[] imagen;
+    
+    private String subtitulo;
+    private String descripcion; 
+    
+    public Curso(int codigo , String nombre, Double precio ,Profesor profesor , String descripcion , String subtitulo, byte[] imagen) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
        this.profesor=profesor;
-       inscritos = inscrito;
+      inscritos = new ArrayList<Inscripcion>();
+      this.descripcion=descripcion;
+      this.subtitulo=subtitulo;
+      this.imagen = imagen;
     }
     
     
     public Curso()
     {
     
+    }
+
+    public String getSubtitulo() {
+        return subtitulo;
+    }
+
+    public void setSubtitulo(String subtitulo) {
+        this.subtitulo = subtitulo;
+    }
+
+    
+    
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
     
 
@@ -88,7 +117,13 @@ public class Curso implements Serializable {
     }
     
     
-    
+       public byte[] getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(byte[] imagen) {
+        this.imagen = imagen;
+    }
     
     
 }

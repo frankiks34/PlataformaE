@@ -18,6 +18,7 @@ Negocio\Estudiante_.class
 Negocio\Curso_.class
 Persistencia\EstudianteJpaController.class
 Persistencia\ProfesorJpaController.class
+servelest\CrearCurso.class
 Persistencia\ControladorPersistencia.class
 Persistencia\exceptions\PreexistingEntityException.class
 Negocio\Usuario.class

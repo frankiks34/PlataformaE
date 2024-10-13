@@ -4,6 +4,7 @@
  */
 package Persistencia;
 
+import Negocio.Curso;
 import Negocio.Estudiante;
 import Negocio.Profesor;
 import java.util.List;
@@ -63,6 +64,11 @@ usuario = new UsuarioJpaController();
       profeso.edit(a);
        
    }
+
+    public void crearcurso(Curso cursos) {
+      
+        curso.create(cursos);
+    }
   
     
     

@@ -7,12 +7,15 @@ import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2024-10-11T01:34:48", comments="EclipseLink-2.7.12.v20230209-rNA")
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2024-10-12T16:55:00", comments="EclipseLink-2.7.12.v20230209-rNA")
 @StaticMetamodel(Curso.class)
 public class Curso_ { 
 
+    public static volatile SingularAttribute<Curso, String> descripcion;
     public static volatile SingularAttribute<Curso, Integer> codigo;
     public static volatile SingularAttribute<Curso, Double> precio;
+    public static volatile SingularAttribute<Curso, String> subtitulo;
+    public static volatile SingularAttribute<Curso, byte[]> imagen;
     public static volatile SingularAttribute<Curso, Profesor> profesor;
     public static volatile ListAttribute<Curso, Inscripcion> inscritos;
     public static volatile SingularAttribute<Curso, String> nombre;
