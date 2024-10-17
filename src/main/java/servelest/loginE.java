@@ -44,23 +44,22 @@ public class loginE extends HttpServlet {
         String contrasenia= request.getParameter("password");
         
        String userType = request.getParameter("userType"); 
-       
-       
-         
+   
        boolean validacion = false;
-     
-      
-     
-       
+
         if ("1".equals(userType) ) {
             
+            Estudiante estudiante = new Estudiante();
               validacion = control.comprobaringresoE(correo,contrasenia);
               
               
              if (validacion==true) {
+                 
+                 estudiante= control.buscarestudiante(correo);
+                 
             HttpSession misession= request.getSession(true);
            
-            misession.setAttribute("estudiante",correo );
+            misession.setAttribute("estudiante",estudiante );
            response.sendRedirect("EstudianteDashboard.jsp");
         }
                
@@ -74,15 +73,10 @@ public class loginE extends HttpServlet {
             
            validacion = control.comprobaringresoP(correo,contrasenia);
           
-           
-           
-            
-             if (validacion==true) {
+         if (validacion==true) {
                  
             profesor =control.buscarprofesor(correo);
-           
-           
-            
+        
             HttpSession misession= request.getSession(true);
            
             misession.setAttribute("profesor",profesor );
@@ -91,14 +85,9 @@ public class loginE extends HttpServlet {
                
                else{
                response.sendRedirect("loginError.jsp");
-               }
-        
+               }    
         }
-            
-            
                
-        
-        
     }
 
     @Override

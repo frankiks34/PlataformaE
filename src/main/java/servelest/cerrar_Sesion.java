@@ -23,11 +23,11 @@ public class cerrar_Sesion extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpSession session = request.getSession(false); // Obtener la sesión existente
+        HttpSession session = request.getSession(false); 
         if (session != null) {
-            session.invalidate(); // Invalidar la sesión
+            session.invalidate(); 
         }
-        response.sendRedirect("index.jsp"); // Redirigir a la página de inicio de sesión
+        response.sendRedirect("index.jsp"); 
     }
 
 }

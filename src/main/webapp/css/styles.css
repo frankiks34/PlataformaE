@@ -4331,6 +4331,21 @@ textarea.form-control-lg {
   }
 }
 
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
 .accordion {
   --bs-accordion-color: #212529;
   --bs-accordion-bg: #fff;

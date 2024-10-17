@@ -24,7 +24,7 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="ProfesorDashboard.jsp">LearnHub - Profesor</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,9 +32,9 @@
             <i class="fas fa-bars ms-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="ProfesorDashboard.jsp">Dashboard</a></li>
+            <ul class="navbar-nav ms-auto"> 
                 <li class="nav-item"><a class="nav-link" href="MisCursos.jsp">Mis Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="MiPerfil.jsp">Mi Perfil</a></li>
                 <li class="nav-item"><a class="nav-link" href="cerrar_Sesion">Cerrar Sesión</a></li>
             </ul>
         </div>
@@ -55,7 +55,7 @@
             <h3 class="section-subheading text-muted">Información del Profesor</h3>
         </div>
         
-        <!-- Información del Perfil -->
+       
         <form action="editarprofe" method="POST">
             <div class="row mb-3">
                 <div class="col-md-6">
@@ -105,10 +105,10 @@
     </div>
 </footer>
 
-<!-- JavaScript para habilitar la edición -->
+
 <script>
 document.getElementById('editButton').addEventListener('click', () => {
-    // Habilitar campos de texto para editar
+   
     document.getElementById('nombreProfesor').disabled = false;
     document.getElementById('apellidoProfesor').disabled = false;
     document.getElementById('emailProfesor').disabled = false;
@@ -116,26 +116,27 @@ document.getElementById('editButton').addEventListener('click', () => {
     document.getElementById('experienciaProfesor').disabled = false;
     document.getElementById('carreraProfesor').disabled = false;
 
-    // Mostrar el botón de guardar y ocultar el botón de editar
+  
     document.getElementById('saveButton').style.display = 'inline-block';
     document.getElementById('editButton').style.display = 'none';
 });
 
 document.getElementById('saveButton').addEventListener('click', () => {
-    // Enviar formulario con los campos habilitados
+    
     document.getElementById('nombreProfesor').disabled = false;
     document.getElementById('apellidoProfesor').disabled = false;
     document.getElementById('emailProfesor').disabled = false;
     document.getElementById('experienciaProfesor').disabled = false;
     document.getElementById('carreraProfesor').disabled = false;
     
-    document.querySelector('form').submit(); // Esto enviará el formulario
+    document.querySelector('form').submit(); 
 });
 
 
 </script>
 
-<!-- Bootstrap Bundle with Popper -->
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

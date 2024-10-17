@@ -5,6 +5,7 @@
 package servelest;
 
 import Negocio.Controlador;
+import Negocio.Estudiante;
 import Negocio.Profesor;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -52,9 +53,25 @@ public class editarprofe extends HttpServlet {
        String id = request.getParameter("id"); 
         
         
+         if ("1".equals(id)){
+          String universi= request.getParameter("universidad");
+            Estudiante estudiante = (Estudiante)request.getSession().getAttribute("estudiante");
+              estudiante.setApellido(apellido);
+            estudiante.setEmail(email);
+                 estudiante.setNombre(nombre);
+                 estudiante.setUniversidad(universi);
+        
+                  try {
+                   control.editarestudiante(estudiante);
+               } catch (Exception ex) {
+                   Logger.getLogger(editarprofe.class.getName()).log(Level.SEVERE, null, ex);
+               }
        
+                  
+         response.sendRedirect("miPerfilE.jsp");
+                  
+        }
       
-       
         if ("2".equals(id)) {
             
             
@@ -71,11 +88,12 @@ public class editarprofe extends HttpServlet {
                    Logger.getLogger(editarprofe.class.getName()).log(Level.SEVERE, null, ex);
                }
               
-            
+             response.sendRedirect("MiPerfil.jsp");
         }
+     
+        
+        
        
-       
-         response.sendRedirect("MiPerfil.jsp");
        
     }
 

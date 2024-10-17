@@ -6,7 +6,7 @@
 
 
    <% HttpSession misession = request.getSession();
-    String estudiante =(String)request.getSession().getAttribute("estudiante");
+    Estudiante estudiante =(Estudiante)request.getSession().getAttribute("estudiante");
     
     if (estudiante==null) {
             response.sendRedirect("sinLogin.jsp");
@@ -26,7 +26,7 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<!-- Navbar del Estudiante -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="EstudianteDashboard.jsp">LearnHub - Estudiante</a>
@@ -38,7 +38,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="MisCursosEstudiante.jsp">Mis Cursos</a></li>
                 <li class="nav-item"><a class="nav-link" href="Cursos.jsp">Explorar Cursos</a></li>
-                <li class="nav-item"><a class="nav-link" href="MiPerfilEstudiante.jsp">Mi Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="miPerfilE.jsp">Mi Perfil</a></li>
                 <li class="nav-item"><a class="nav-link" href="BolsaCompras.jsp">Bolsa de Compras</a></li>
                 <li class="nav-item"><a class="nav-link" href="cerrar_Sesion">Cerrar Sesión</a></li>
             </ul>
@@ -46,7 +46,7 @@
     </div>
 </nav>
 
-<!-- Sección de Bienvenida -->
+
 <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
         <h1 class="masthead-heading text-uppercase mb-0">Bienvenido, Estudiante</h1>
@@ -54,7 +54,7 @@
     </div>
 </header>
 
-<!-- Sección de Enlaces Rápidos -->
+
 <section class="page-section bg-light text-center">
     <div class="container">
         <h2 class="section-heading text-uppercase">Opciones Rápidas</h2>

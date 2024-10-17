@@ -134,6 +134,34 @@ public class Controlador {
     
     }
 
+    public Estudiante buscarestudiante(String correo) {
+    
+         List<Estudiante> lista = new ArrayList<Estudiante>();
+        
+        int a=0;
+
+        
+        lista = control.getEstudiante();
+        
+   
+        
+       for (Estudiante estu : lista) {
+           if (estu.getEmail().equals(correo)) {
+              
+             return estu;
+           }
+            
+       }
+         return null;
+        
+        
+    }
+
+    public void editarestudiante(Estudiante estudiante) throws Exception {
+      
+    control.editarestudiante(estudiante);
+    }
+
  
      
     

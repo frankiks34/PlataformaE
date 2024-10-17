@@ -69,6 +69,11 @@ usuario = new UsuarioJpaController();
       
         curso.create(cursos);
     }
+
+    public void editarestudiante(Estudiante estudiantes) throws Exception {
+     
+       estudiante.edit(estudiantes);
+    }
   
     
     
