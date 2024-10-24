@@ -51,6 +51,9 @@ public class CrearEstu extends HttpServlet {
         
        control.crearestudiante( nombreUsuario, apellido,  email,contra ,universidad);
         
+       control.crearbolsa(nombreUsuario);
+       
+       
       response.sendRedirect("loginPa.jsp");
         
     }

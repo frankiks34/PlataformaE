@@ -4,11 +4,13 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>Negocio.Estudiante</class>
     <class>Negocio.Inscripcion</class>
-    <class>Negocio.Profesor</class>
     <class>Negocio.Persona</class>
     <class>Negocio.Reseña</class>
     <class>Negocio.Usuario</class>
     <class>Negocio.Curso</class>
+    <class>Negocio.Profesor</class>
+    <class>Negocio.bolsa_Compras</class>
+    <class>Negocio.boleta</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=plataforma;encrypt=true;trustServerCertificate=true"/>

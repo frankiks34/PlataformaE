@@ -76,16 +76,22 @@
                 <div class="row mt-4"> 
             <% 
                     }
+  String base64Image = "";
+            if (curso.getImagen() != null) {
+                base64Image = Base64.getEncoder().encodeToString(curso.getImagen());
+            }
+
             %>
            
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img class="card-img-top"  alt="Curso 1">
-                    <div class="card-body">
+                    <img class="card-img-top img-fluid" src="data:image/jpeg;base64,<%= base64Image %>" alt="Imagen del Curso" style="height: 200px; object-fit: cover; width: 100%;">
+                     
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><%= curso.getNombre() %></h5>
                         <p class="card-text"><%= curso.getSubtitulo() != null ? curso.getSubtitulo() : "Sin subtítulo disponible" %></p>
                         <h6 class="card-subtitle mb-2 text-muted"><%= curso.getPrecio() != null ? curso.getPrecio() + " USD" : "Precio no disponible" %></h6>
-                        <a href="#" class="btn btn-warning text-white">Administrar Curso</a>
+                        <a href="#" class="btn btn-warning text-white mt-auto">Administrar Curso</a>
                     </div>
                 </div>
             </div>

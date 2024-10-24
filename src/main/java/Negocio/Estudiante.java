@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
@@ -23,6 +24,7 @@ import javax.persistence.Table;
 
        private String Universidad;
 
+        
 
 
 
@@ -31,12 +33,19 @@ import javax.persistence.Table;
 
            this.Universidad=universidad;
            inscripcion = new ArrayList<Inscripcion>();
+          
        }
 
 
        public Estudiante(){
 
        }
+
+       
+       
+ 
+
+ 
 
 
        public String getUniversidad() {

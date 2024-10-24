@@ -5,6 +5,7 @@
 package Negocio;
 
 import Persistencia.ControladorPersistencia;
+import Persistencia.bolsa_ComprasJpaController;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,39 @@ public class Controlador {
     ControladorPersistencia control = new ControladorPersistencia();
     
     
+    
+    public List<Profesor> getProfesores()
+    {
+    
+        List<Profesor> lista =new ArrayList<Profesor>();
+        
+      return lista = control.getProfesores();
+      
+    }
+    
+    public void crearbolsa(String nombre){
+    
+       bolsa_Compras bol = new bolsa_Compras();
+       List<Estudiante> lista = new ArrayList<Estudiante>();
+        Estudiante a = new Estudiante();
+        lista=control.getEstudiantes();
+       
+        for (Estudiante estu : lista) {
+           if (estu.getNombre().equals(nombre)) {
+
+             
+      
+           a=estu;
+           }
+          
+       }
+        
+        bol.setEstudiante(a);
+      
+        control.crearbolsa(bol);
+     
+        
+    }
 
     public void crearestudiante(String nombreUsuario, String apellido, String email, String contra, String universidad) {
   
@@ -29,7 +63,7 @@ public class Controlador {
          estudi.setEmail(email);
         estudi.setUniversidad(universidad);
         control.Crearestudiante(estudi);
-        
+       
     }
     
     public void crearmaestro(String nombreUsuario, String apellido, String email, String contra, int experiencia , String carrera)
@@ -77,10 +111,10 @@ public class Controlador {
          boolean ingreso =false;
         List<Estudiante> lista = new ArrayList<Estudiante>();
         
-        System.out.println("Valor de userType recibido: " + correo); // Línea añadida para depuración
+   
 
         
-        lista=control.getEstudiante();
+        lista=control.getEstudiantes();
         
        for (Estudiante pro : lista) {
            if (pro.getEmail().equals(correo)) {
@@ -141,7 +175,7 @@ public class Controlador {
         int a=0;
 
         
-        lista = control.getEstudiante();
+        lista = control.getEstudiantes();
         
    
         
@@ -162,8 +196,46 @@ public class Controlador {
     control.editarestudiante(estudiante);
     }
 
+    public Curso buscarcurso(int codigo) {
+       
+    return control.getcurso(codigo);
+        
+    }
+    
+    public void setbolsa(bolsa_Compras bolsaCompras) throws Exception
+    {
+    
+    control.setbolsa(bolsaCompras);
+    
+    }
+
  
+    public bolsa_Compras buscarB(Estudiante a)
+    {
+    System.out.println(a.getNombre()+"este es el que se mando  ");
+       List<bolsa_Compras> lista = control.getbolsas();
+       
+           for ( bolsa_Compras de : lista) {
+       
+               
+       }
+       
+       
+       
      
+           for ( bolsa_Compras e : lista) {
+           if (e.getEstudiante().getNombre().equals(a.getNombre())) {
+            
+           return e;
+               
+           }
+            
+       }
+           
+            
+              System.out.println("no se encontro el estudiante" );
+            return null;
+    }
     
     
      

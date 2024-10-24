@@ -61,7 +61,7 @@
                 <input type="number" class="form-control" id="precioCurso" name="precio" placeholder="Precio del curso"  required>
             </div>
             <div class="mb-3">
-            <label for="profesorCurso" class="form-label">Descripcion</label>
+            <label for="descripcioncurso" class="form-label">Descripcion</label>
             <input type="text" class="form-control" id="descripcioncurso" name="descripcion" value="">
             </div> 
              <div class="mb-3">

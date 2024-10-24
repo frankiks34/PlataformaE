@@ -37,9 +37,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="MisCursosEstudiante.jsp">Mis Cursos</a></li>
-                <li class="nav-item"><a class="nav-link" href="Cursos.jsp">Explorar Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="Motrar_cursos">Explorar Cursos</a></li>
                 <li class="nav-item"><a class="nav-link" href="miPerfilE.jsp">Mi Perfil</a></li>
-                <li class="nav-item"><a class="nav-link" href="BolsaCompras.jsp">Bolsa de Compras</a></li>
+                <li class="nav-item"><a class="nav-link" href="Bolsa">Bolsa de Compras</a></li>
                 <li class="nav-item"><a class="nav-link" href="cerrar_Sesion">Cerrar Sesión</a></li>
             </ul>
         </div>

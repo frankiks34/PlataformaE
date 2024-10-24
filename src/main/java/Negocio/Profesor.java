@@ -52,7 +52,11 @@ public class Profesor extends Usuario{
         this.experiancia = experiancia;
     }
 
-   
+   public List<Curso> getLista()
+   {
+   return lista;
+           
+   }
 
     public String getCarrera() {
         return Carrera;
@@ -62,9 +66,7 @@ public class Profesor extends Usuario{
         this.Carrera = Carrera;
     }
 
-    public List<Curso> getLista() {
-        return lista;
-    }
+    
 
     public void setLista(List<Curso> lista) {
         this.lista = lista;

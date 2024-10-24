@@ -2,6 +2,7 @@ Persistencia\exceptions\IllegalOrphanException.class
 servelest\editarprofe.class
 Persistencia\exceptions\NonexistentEntityException.class
 servelest\loginE.class
+Negocio\boleta_.class
 servelest\CrearEstu.class
 Negocio\Estudiante.class
 Negocio\Profesor.class
@@ -13,8 +14,12 @@ Negocio\Controlador.class
 Negocio\Usuario_.class
 Negocio\Curso.class
 Persistencia\ReseñaJpaController.class
+servelest\Bolsa.class
+Negocio\bolsa_Compras.class
 Negocio\Profesor_.class
 Negocio\Estudiante_.class
+Negocio\bolsa_Compras_.class
+servelest\CursoMostrar.class
 Negocio\Curso_.class
 Persistencia\EstudianteJpaController.class
 Persistencia\ProfesorJpaController.class
@@ -22,8 +27,11 @@ servelest\CrearCurso.class
 Persistencia\ControladorPersistencia.class
 Persistencia\exceptions\PreexistingEntityException.class
 Negocio\Usuario.class
+Persistencia\bolsa_ComprasJpaController.class
 Negocio\Reseña.class
+Negocio\boleta.class
 servelest\cerrar_Sesion.class
 servelest\crearProfe.class
+servelest\Motrar_cursos.class
 Persistencia\CursoJpaController.class
 Negocio\Inscripcion.class
