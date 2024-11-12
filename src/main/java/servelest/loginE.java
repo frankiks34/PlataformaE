@@ -4,9 +4,11 @@
  */
 package servelest;
 
+import Negocio.StripeConfig;
 import Negocio.Controlador;
 import Negocio.Estudiante;
 import Negocio.Profesor;
+import com.stripe.Stripe;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -24,7 +26,8 @@ import javax.servlet.http.HttpSession;
 public class loginE extends HttpServlet {
 
      Controlador control = new Controlador();
-    
+
+     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     
@@ -39,7 +42,9 @@ public class loginE extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
+    
+        StripeConfig.initialize();
+        
            String correo= request.getParameter("email");
         String contrasenia= request.getParameter("password");
         

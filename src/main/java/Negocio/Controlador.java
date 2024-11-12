@@ -8,6 +8,7 @@ import Persistencia.ControladorPersistencia;
 import Persistencia.bolsa_ComprasJpaController;
 import java.util.ArrayList;
 import java.util.List;
+import servelest.Bolsa;
 
 /**
  *
@@ -215,14 +216,7 @@ public class Controlador {
     System.out.println(a.getNombre()+"este es el que se mando  ");
        List<bolsa_Compras> lista = control.getbolsas();
        
-           for ( bolsa_Compras de : lista) {
-       
-               
-       }
-       
-       
-       
-     
+        
            for ( bolsa_Compras e : lista) {
            if (e.getEstudiante().getNombre().equals(a.getNombre())) {
             
@@ -236,7 +230,26 @@ public class Controlador {
               System.out.println("no se encontro el estudiante" );
             return null;
     }
+
+    public bolsa_Compras buscarBC(int codigo) {
+      
+          return control.getbolsa(codigo);
     
+    }
+
+    public Curso getcurso(int codigo) {
+        
+     return control.getcurso(codigo);
+    }
+
+    public void crearInscripcion(Inscripcion a) {
+        control.CrearInscripcion(a);
+    }
+
+     public void crearBoleta(Boleta a) {
+        control.CrearBoleta(a);
+    }
+
     
      
      

@@ -20,11 +20,13 @@ import javax.persistence.Table;
    public class Estudiante extends Usuario{
 
          @OneToMany(mappedBy="estudiante")
-        private List<Inscripcion> inscripcion;
+        private List<Inscripcion> inscripcion= new ArrayList<Inscripcion>();
 
        private String Universidad;
 
         
+    @OneToMany(mappedBy="estudiante")  
+    private List<Boleta> boletas = new ArrayList<Boleta>();
 
 
 
@@ -32,13 +34,14 @@ import javax.persistence.Table;
            super(codigo, Nombre, Apellido, email, contrasenia);
 
            this.Universidad=universidad;
-           inscripcion = new ArrayList<Inscripcion>();
+         
           
        }
 
 
        public Estudiante(){
 
+  
        }
 
        
@@ -63,7 +66,17 @@ import javax.persistence.Table;
        public void setInscripcion(List<Inscripcion> inscripcion) {
            this.inscripcion = inscripcion;
        }
+  public List<Boleta> getBoletas() {
+        return boletas;
+    }
 
+    public void setBoletas(List<Boleta> boletas) {
+        this.boletas = boletas;
+    }
+
+    public void agregarBoleta(Boleta boleta) {
+        boletas.add(boleta);
+    }
 
 
 

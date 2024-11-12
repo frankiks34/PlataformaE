@@ -18,7 +18,7 @@ import javax.persistence.OneToOne;
 
 
 @Entity
-public class bolsa_Compras implements Serializable {
+public class bolsa_Compras {
 
    
     @Id
@@ -79,9 +79,26 @@ public class bolsa_Compras implements Serializable {
             cursos.add(curso);
         }
     }
-    public void removerCurso(Curso curso) {
-        cursos.remove(curso);
+    public void removerCurso(int cursoId) {
+      
+    Curso cursoAEliminar = null;
+
+    for (Curso curso : cursos) {
+        if (curso.getCodigo() == cursoId) { // Compara usando el ID
+            cursoAEliminar = curso;
+            break;
+        }
     }
+
+    if (cursoAEliminar != null) {
+        cursos.remove(cursoAEliminar);
+        System.out.println("Curso eliminado: " + cursoAEliminar.getNombre());
+    } else {
+        System.out.println("El curso no se encuentra en la bolsa: " + cursoId);
+    }
+    
+    }
+    
     
     public double totalimporte()       
     {
@@ -94,7 +111,7 @@ public class bolsa_Compras implements Serializable {
      return a;
     }
       
-    
+        
     
     
     

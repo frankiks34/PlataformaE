@@ -4,8 +4,10 @@
  */
 package Persistencia;
 
+import Negocio.Boleta;
 import Negocio.Curso;
 import Negocio.Estudiante;
+import Negocio.Inscripcion;
 import Negocio.Profesor;
 import Negocio.bolsa_Compras;
 import java.util.List;
@@ -23,6 +25,8 @@ public class ControladorPersistencia {
    ReseñaJpaController resenia;
    UsuarioJpaController usuario ;
     bolsa_ComprasJpaController bolsa;
+    BoletaJpaController boleta;
+  
    
    public ControladorPersistencia (){
    
@@ -33,6 +37,7 @@ profeso = new ProfesorJpaController();
 resenia= new ReseñaJpaController();
 usuario = new UsuarioJpaController();
    bolsa = new bolsa_ComprasJpaController();
+   boleta = new   BoletaJpaController();
    }
    
   
@@ -98,6 +103,17 @@ usuario = new UsuarioJpaController();
   
        return bolsa.findBolsaComprasEntities();
   
+    }
+
+    public bolsa_Compras getbolsa(int codigo) {
+    return bolsa.findBolsaCompras(codigo);
+    }
+
+    public void CrearInscripcion(Inscripcion a) {
+       inscripcion.create(a);
+    }
+ public void CrearBoleta(Boleta bo){
+       boleta.create(bo);
     }
 
    
