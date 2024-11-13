@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="ProfesorDashboard.jsp">LearnHub - Profesor</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,14 +31,15 @@
             <i class="fas fa-bars ms-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="ProfesorDashboard.jsp">Dashboard</a></li>
+            <ul class="navbar-nav ms-auto"> 
                 <li class="nav-item"><a class="nav-link" href="MisCursos.jsp">Mis Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="MiPerfil.jsp">Mi Perfil</a></li>
                 <li class="nav-item"><a class="nav-link" href="cerrar_Sesion">Cerrar Sesión</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
 
 <header class="masthead bg-primary text-white text-center">
     <div class="container">
@@ -60,7 +61,7 @@
                 <input type="number" class="form-control" id="precioCurso" name="precio" placeholder="Precio del curso"  required>
             </div>
             <div class="mb-3">
-            <label for="profesorCurso" class="form-label">Descripcion</label>
+            <label for="descripcioncurso" class="form-label">Descripcion</label>
             <input type="text" class="form-control" id="descripcioncurso" name="descripcion" value="">
             </div> 
              <div class="mb-3">
@@ -79,7 +80,7 @@
     </div>
 </section>
 
-<!-- Bootstrap Bundle with Popper -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>

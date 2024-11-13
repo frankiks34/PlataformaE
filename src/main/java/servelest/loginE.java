@@ -4,9 +4,11 @@
  */
 package servelest;
 
+import Negocio.StripeConfig;
 import Negocio.Controlador;
 import Negocio.Estudiante;
 import Negocio.Profesor;
+import com.stripe.Stripe;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -24,7 +26,8 @@ import javax.servlet.http.HttpSession;
 public class loginE extends HttpServlet {
 
      Controlador control = new Controlador();
-    
+
+     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     
@@ -39,28 +42,29 @@ public class loginE extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
+    
+        StripeConfig.initialize();
+        
            String correo= request.getParameter("email");
         String contrasenia= request.getParameter("password");
         
        String userType = request.getParameter("userType"); 
-       
-       
-         
+   
        boolean validacion = false;
-     
-      
-     
-       
+
         if ("1".equals(userType) ) {
             
+            Estudiante estudiante = new Estudiante();
               validacion = control.comprobaringresoE(correo,contrasenia);
               
               
              if (validacion==true) {
+                 
+                 estudiante= control.buscarestudiante(correo);
+                 
             HttpSession misession= request.getSession(true);
            
-            misession.setAttribute("estudiante",correo );
+            misession.setAttribute("estudiante",estudiante );
            response.sendRedirect("EstudianteDashboard.jsp");
         }
                
@@ -74,15 +78,10 @@ public class loginE extends HttpServlet {
             
            validacion = control.comprobaringresoP(correo,contrasenia);
           
-           
-           
-            
-             if (validacion==true) {
+         if (validacion==true) {
                  
             profesor =control.buscarprofesor(correo);
-           
-           
-            
+        
             HttpSession misession= request.getSession(true);
            
             misession.setAttribute("profesor",profesor );
@@ -91,14 +90,9 @@ public class loginE extends HttpServlet {
                
                else{
                response.sendRedirect("loginError.jsp");
-               }
-        
+               }    
         }
-            
-            
                
-        
-        
     }
 
     @Override

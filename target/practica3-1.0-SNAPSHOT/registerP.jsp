@@ -91,10 +91,10 @@
 
     <!-- Script para Mostrar Formulario Dinámico y Cambiar Action -->
     <script>
-        // Variable para almacenar el tipo seleccionado
+
         let tipoUsuario = '';
 
-        // Función para mostrar los campos específicos según el tipo de usuario
+        
         function mostrarFormulario(tipo) {
             tipoUsuario = tipo;
             // Mostrar u ocultar campos según el tipo
