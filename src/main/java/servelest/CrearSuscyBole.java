@@ -43,7 +43,7 @@ public class CrearSuscyBole extends HttpServlet {
         Estudiante estudiante = (Estudiante) request.getSession().getAttribute("estudiante");
         bolsa_Compras bolsaCompras = controlador.buscarB(estudiante);
 
-        // Obtener los detalles de pago de la URL
+  
         String paymentIntentId = request.getParameter("paymentIntentId");
         String paymentMethodId = request.getParameter("paymentMethodId");
         double monto = Double.parseDouble(request.getParameter("monto"));
@@ -52,16 +52,16 @@ public class CrearSuscyBole extends HttpServlet {
         System.out.println("PaymentMethodId: " + paymentMethodId);
         System.out.println("Monto: " + monto);   
         
-        // Crear inscripciones y boletas para cada curso en la bolsa de compras
+       
         for (Curso curso : bolsaCompras.getCursos()) {
-            // Crear la inscripción
+           
             Inscripcion inscripcion = new Inscripcion();
             inscripcion.setEstudiante(estudiante);
             inscripcion.setCurso(curso);
             inscripcion.setCalificacion(0);
             controlador.crearInscripcion(inscripcion);
 
-            // Crear la boleta para cada curso
+           
             Boleta boleta = new Boleta();
             boleta.setEstudiante(estudiante);
             boleta.setCurso(curso);
@@ -72,7 +72,7 @@ public class CrearSuscyBole extends HttpServlet {
             boleta.setFechaTransaccion(new Date());
             boleta.setDescripcion("Pago por curso " + curso.getNombre());
 
-            controlador.crearBoleta(boleta); // Guardar la boleta
+            controlador.crearBoleta(boleta);
              
             estudiante.getBoletas().add(boleta);
             estudiante.getInscripcion().add(inscripcion);

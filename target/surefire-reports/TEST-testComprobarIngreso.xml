@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="testComprobarIngreso" time="3.192" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Frank\Documents\NetBeansProjects\practica3\target\test-classes;C:\Users\Frank\Documents\NetBeansProjects\practica3\target\classes;C:\Users\Frank\.m2\repository\org\json\json\20210307\json-20210307.jar;C:\Users\Frank\.m2\repository\jakarta\platform\jakarta.jakartaee-api\8.0.0\jakarta.jakartaee-api-8.0.0.jar;C:\Users\Frank\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\10.2.0.jre8\mssql-jdbc-10.2.0.jre8.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.core\2.7.12\org.eclipse.persistence.core-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.asm\9.4.0\org.eclipse.persistence.asm-9.4.0.jar;C:\Users\Frank\.m2\repository\com\stripe\stripe-java\28.0.0\stripe-java-28.0.0.jar;C:\Users\Frank\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.antlr\2.7.12\org.eclipse.persistence.antlr-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa\2.7.12\org.eclipse.persistence.jpa-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.jpql\2.7.12\org.eclipse.persistence.jpa.jpql-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.moxy\2.7.12\org.eclipse.persistence.moxy-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\jakarta.persistence\2.2.3\jakarta.persistence-2.2.3.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.modelgen.processor\2.7.12\org.eclipse.persistence.jpa.modelgen.processor-2.7.12.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Frank\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Frank\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Frank\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Frank\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Frank\AppData\Local\Temp\surefire3365173918460210695\surefirebooter17735162619929555835.jar C:\Users\Frank\AppData\Local\Temp\surefire3365173918460210695 2024-11-12T14-06-34_636-jvmRun1 surefire935559700736043503tmp surefire_017281209336675968111tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="BolsaComprasTest,testComprobarIngreso"/>
+    <property name="surefire.test.class.path" value="C:\Users\Frank\Documents\NetBeansProjects\practica3\target\test-classes;C:\Users\Frank\Documents\NetBeansProjects\practica3\target\classes;C:\Users\Frank\.m2\repository\org\json\json\20210307\json-20210307.jar;C:\Users\Frank\.m2\repository\jakarta\platform\jakarta.jakartaee-api\8.0.0\jakarta.jakartaee-api-8.0.0.jar;C:\Users\Frank\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\10.2.0.jre8\mssql-jdbc-10.2.0.jre8.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.core\2.7.12\org.eclipse.persistence.core-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.asm\9.4.0\org.eclipse.persistence.asm-9.4.0.jar;C:\Users\Frank\.m2\repository\com\stripe\stripe-java\28.0.0\stripe-java-28.0.0.jar;C:\Users\Frank\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.antlr\2.7.12\org.eclipse.persistence.antlr-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa\2.7.12\org.eclipse.persistence.jpa-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.jpql\2.7.12\org.eclipse.persistence.jpa.jpql-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.moxy\2.7.12\org.eclipse.persistence.moxy-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\jakarta.persistence\2.2.3\jakarta.persistence-2.2.3.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.modelgen.processor\2.7.12\org.eclipse.persistence.jpa.modelgen.processor-2.7.12.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Frank\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Frank\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Frank\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Frank\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Frank"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Frank\Documents\NetBeansProjects\practica3"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Frank\AppData\Local\Temp\surefire3365173918460210695\surefirebooter17735162619929555835.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
+    <property name="user.name" value="Frank"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-22\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\Frank\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Frank\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="C:\Users\Frank\Documents\NetBeansProjects\practica3"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;D:\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Users\Frank\.console-ninja\.bin;C:\Users\Frank\AppData\Local\Microsoft\WindowsApps;C:\Users\Frank\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Azure Data Studio\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.11+7-LTS-207"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testComprobarIngresoEstudiante" classname="testComprobarIngreso" time="3.19">
+    <system-out><![CDATA[[EL Fine]: server: 2024-11-12 14:06:37.717--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2024-11-12 14:06:38.054--ServerSession(127791068)--Thread(Thread[main,5,main])--The access type for the persistent class [class Negocio.Usuario] is set to [FIELD].
+[EL Config]: metadata: 2024-11-12 14:06:38.1--ServerSession(127791068)--Thread(Thread[main,5,main])--The access type for the persistent class [class Negocio.Profesor] is set to [FIELD].
+[EL Config]: metadata: 2024-11-12 14:06:38.11--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field lista] is being defaulted to: class Negocio.Curso.
+[EL Config]: metadata: 2024-11-12 14:06:38.111--ServerSession(127791068)--Thread(Thread[main,5,main])--The access type for the persistent class [class Negocio.Curso] is set to [FIELD].
+[EL Config]: metadata: 2024-11-12 14:06:38.116--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field profesor] is being defaulted to: class Negocio.Profesor.
+[EL Config]: metadata: 2024-11-12 14:06:38.117--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field inscritos] is being defaulted to: class Negocio.Inscripcion.
+[EL Config]: metadata: 2024-11-12 14:06:38.117--ServerSession(127791068)--Thread(Thread[main,5,main])--The access type for the persistent class [class Negocio.bolsa_Compras] is set to [FIELD].
+[EL Config]: metadata: 2024-11-12 14:06:38.117--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field estudiante] is being defaulted to: class Negocio.Estudiante.
+[EL Config]: metadata: 2024-11-12 14:06:38.119--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field cursos] is being defaulted to: class Negocio.Curso.
+[EL Config]: metadata: 2024-11-12 14:06:38.12--ServerSession(127791068)--Thread(Thread[main,5,main])--The access type for the persistent class [class Negocio.Inscripcion] is set to [FIELD].
+[EL Config]: metadata: 2024-11-12 14:06:38.12--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field estudiante] is being defaulted to: class Negocio.Estudiante.
+[EL Config]: metadata: 2024-11-12 14:06:38.12--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field curso] is being defaulted to: class Negocio.Curso.
+[EL Config]: metadata: 2024-11-12 14:06:38.12--ServerSession(127791068)--Thread(Thread[main,5,main])--The access type for the persistent class [class Negocio.Estudiante] is set to [FIELD].
+[EL Config]: metadata: 2024-11-12 14:06:38.121--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field inscripcion] is being defaulted to: class Negocio.Inscripcion.
+[EL Config]: metadata: 2024-11-12 14:06:38.121--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field boletas] is being defaulted to: class Negocio.Boleta.
+[EL Config]: metadata: 2024-11-12 14:06:38.121--ServerSession(127791068)--Thread(Thread[main,5,main])--The access type for the persistent class [class Negocio.Boleta] is set to [FIELD].
+[EL Config]: metadata: 2024-11-12 14:06:38.122--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field estudiante] is being defaulted to: class Negocio.Estudiante.
+[EL Config]: metadata: 2024-11-12 14:06:38.123--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field curso] is being defaulted to: class Negocio.Curso.
+[EL Config]: metadata: 2024-11-12 14:06:38.123--ServerSession(127791068)--Thread(Thread[main,5,main])--The access type for the persistent class [class Negocio.Reseña] is set to [FIELD].
+[EL Config]: metadata: 2024-11-12 14:06:38.123--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field estudiante] is being defaulted to: class Negocio.Estudiante.
+[EL Config]: metadata: 2024-11-12 14:06:38.124--ServerSession(127791068)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field curso] is being defaulted to: class Negocio.Curso.
+[EL Config]: metadata: 2024-11-12 14:06:38.124--ServerSession(127791068)--Thread(Thread[main,5,main])--The alias name for the entity class [class Negocio.Profesor] is being defaulted to: Profesor.
+[EL Config]: metadata: 2024-11-12 14:06:38.124--ServerSession(127791068)--Thread(Thread[main,5,main])--The alias name for the entity class [class Negocio.Usuario] is being defaulted to: Usuario.
+[EL Config]: metadata: 2024-11-12 14:06:38.125--ServerSession(127791068)--Thread(Thread[main,5,main])--The table name for entity [class Negocio.Usuario] is being defaulted to: USUARIO.
+[EL Config]: metadata: 2024-11-12 14:06:38.176--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [Nombre] is being defaulted to: NOMBRE.
+[EL Config]: metadata: 2024-11-12 14:06:38.177--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [codigo] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.177--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [Apellido] is being defaulted to: APELLIDO.
+[EL Config]: metadata: 2024-11-12 14:06:38.177--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [contrasenia] is being defaulted to: CONTRASENIA.
+[EL Config]: metadata: 2024-11-12 14:06:38.178--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2024-11-12 14:06:38.178--ServerSession(127791068)--Thread(Thread[main,5,main])--The table name for entity [class Negocio.Profesor] is being defaulted to: PROFESOR.
+[EL Config]: metadata: 2024-11-12 14:06:38.179--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [Nombre] is being defaulted to: NOMBRE.
+[EL Config]: metadata: 2024-11-12 14:06:38.18--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [codigo] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.181--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [experiancia] is being defaulted to: EXPERIANCIA.
+[EL Config]: metadata: 2024-11-12 14:06:38.181--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [Carrera] is being defaulted to: CARRERA.
+[EL Config]: metadata: 2024-11-12 14:06:38.182--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [Apellido] is being defaulted to: APELLIDO.
+[EL Config]: metadata: 2024-11-12 14:06:38.182--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [contrasenia] is being defaulted to: CONTRASENIA.
+[EL Config]: metadata: 2024-11-12 14:06:38.182--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2024-11-12 14:06:38.183--ServerSession(127791068)--Thread(Thread[main,5,main])--The alias name for the entity class [class Negocio.Curso] is being defaulted to: Curso.
+[EL Config]: metadata: 2024-11-12 14:06:38.183--ServerSession(127791068)--Thread(Thread[main,5,main])--The table name for entity [class Negocio.Curso] is being defaulted to: CURSO.
+[EL Config]: metadata: 2024-11-12 14:06:38.184--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [descripcion] is being defaulted to: DESCRIPCION.
+[EL Config]: metadata: 2024-11-12 14:06:38.185--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [codigo] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.186--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [precio] is being defaulted to: PRECIO.
+[EL Config]: metadata: 2024-11-12 14:06:38.187--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [subtitulo] is being defaulted to: SUBTITULO.
+[EL Config]: metadata: 2024-11-12 14:06:38.187--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [imagen] is being defaulted to: IMAGEN.
+[EL Config]: metadata: 2024-11-12 14:06:38.206--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [nombre] is being defaulted to: NOMBRE.
+[EL Config]: metadata: 2024-11-12 14:06:38.207--ServerSession(127791068)--Thread(Thread[main,5,main])--The alias name for the entity class [class Negocio.bolsa_Compras] is being defaulted to: bolsa_Compras.
+[EL Config]: metadata: 2024-11-12 14:06:38.207--ServerSession(127791068)--Thread(Thread[main,5,main])--The table name for entity [class Negocio.bolsa_Compras] is being defaulted to: BOLSA_COMPRAS.
+[EL Config]: metadata: 2024-11-12 14:06:38.208--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2024-11-12 14:06:38.208--ServerSession(127791068)--Thread(Thread[main,5,main])--The alias name for the entity class [class Negocio.Inscripcion] is being defaulted to: Inscripcion.
+[EL Config]: metadata: 2024-11-12 14:06:38.209--ServerSession(127791068)--Thread(Thread[main,5,main])--The table name for entity [class Negocio.Inscripcion] is being defaulted to: INSCRIPCION.
+[EL Config]: metadata: 2024-11-12 14:06:38.209--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [calificacion] is being defaulted to: CALIFICACION.
+[EL Config]: metadata: 2024-11-12 14:06:38.21--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [code] is being defaulted to: CODE.
+[EL Config]: metadata: 2024-11-12 14:06:38.21--ServerSession(127791068)--Thread(Thread[main,5,main])--The alias name for the entity class [class Negocio.Estudiante] is being defaulted to: Estudiante.
+[EL Config]: metadata: 2024-11-12 14:06:38.21--ServerSession(127791068)--Thread(Thread[main,5,main])--The table name for entity [class Negocio.Estudiante] is being defaulted to: ESTUDIANTE.
+[EL Config]: metadata: 2024-11-12 14:06:38.211--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [Nombre] is being defaulted to: NOMBRE.
+[EL Config]: metadata: 2024-11-12 14:06:38.212--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [codigo] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.212--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [Universidad] is being defaulted to: UNIVERSIDAD.
+[EL Config]: metadata: 2024-11-12 14:06:38.213--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [Apellido] is being defaulted to: APELLIDO.
+[EL Config]: metadata: 2024-11-12 14:06:38.213--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [contrasenia] is being defaulted to: CONTRASENIA.
+[EL Config]: metadata: 2024-11-12 14:06:38.214--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2024-11-12 14:06:38.214--ServerSession(127791068)--Thread(Thread[main,5,main])--The alias name for the entity class [class Negocio.Boleta] is being defaulted to: Boleta.
+[EL Config]: metadata: 2024-11-12 14:06:38.214--ServerSession(127791068)--Thread(Thread[main,5,main])--The table name for entity [class Negocio.Boleta] is being defaulted to: BOLETA.
+[EL Config]: metadata: 2024-11-12 14:06:38.215--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [paymentIntentId] is being defaulted to: PAYMENTINTENTID.
+[EL Config]: metadata: 2024-11-12 14:06:38.215--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [descripcion] is being defaulted to: DESCRIPCION.
+[EL Config]: metadata: 2024-11-12 14:06:38.216--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [monto] is being defaulted to: MONTO.
+[EL Config]: metadata: 2024-11-12 14:06:38.216--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [fechaTransaccion] is being defaulted to: FECHATRANSACCION.
+[EL Config]: metadata: 2024-11-12 14:06:38.217--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [paymentMethodId] is being defaulted to: PAYMENTMETHODID.
+[EL Config]: metadata: 2024-11-12 14:06:38.217--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [idBoleta] is being defaulted to: IDBOLETA.
+[EL Config]: metadata: 2024-11-12 14:06:38.218--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [fechaCreacion] is being defaulted to: FECHACREACION.
+[EL Config]: metadata: 2024-11-12 14:06:38.218--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [returnUrl] is being defaulted to: RETURNURL.
+[EL Config]: metadata: 2024-11-12 14:06:38.218--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [estadoPago] is being defaulted to: ESTADOPAGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.219--ServerSession(127791068)--Thread(Thread[main,5,main])--The alias name for the entity class [class Negocio.Reseña] is being defaulted to: Reseña.
+[EL Config]: metadata: 2024-11-12 14:06:38.219--ServerSession(127791068)--Thread(Thread[main,5,main])--The table name for entity [class Negocio.Reseña] is being defaulted to: RESEÑA.
+[EL Config]: metadata: 2024-11-12 14:06:38.22--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2024-11-12 14:06:38.22--ServerSession(127791068)--Thread(Thread[main,5,main])--The column name for element [comentario] is being defaulted to: COMENTARIO.
+[EL Config]: metadata: 2024-11-12 14:06:38.258--ServerSession(127791068)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field profesor] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.259--ServerSession(127791068)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field estudiante] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.259--ServerSession(127791068)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [estudiante] is being defaulted to: ESTUDIANTE_CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.286--ServerSession(127791068)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field cursos] is being defaulted to: ID.
+[EL Config]: metadata: 2024-11-12 14:06:38.286--ServerSession(127791068)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field cursos] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.287--ServerSession(127791068)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field estudiante] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.287--ServerSession(127791068)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field curso] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.288--ServerSession(127791068)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field estudiante] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.288--ServerSession(127791068)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field curso] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.288--ServerSession(127791068)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field estudiante] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.289--ServerSession(127791068)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [estudiante] is being defaulted to: ESTUDIANTE_CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.289--ServerSession(127791068)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field curso] is being defaulted to: CODIGO.
+[EL Config]: metadata: 2024-11-12 14:06:38.29--ServerSession(127791068)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [curso] is being defaulted to: CURSO_CODIGO.
+[EL Info]: 2024-11-12 14:06:38.528--ServerSession(127791068)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.12.v20230209-e5c4074ef3
+[EL Fine]: connection: 2024-11-12 14:06:39.403--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.SQLServerPlatform
+[EL Fine]: connection: 2024-11-12 14:06:39.415--ServerSession(127791068)--Connection(1837601499)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>SQLServerPlatform
+	user name=> "userfrank"
+	datasource URL=> "jdbc:sqlserver://localhost:1433;databaseName=plataforma;encrypt=true;trustServerCertificate=true"
+))
+[EL Config]: connection: 2024-11-12 14:06:39.575--ServerSession(127791068)--Connection(1139609587)--Thread(Thread[main,5,main])--Connected: jdbc:sqlserver://localhost:1433;connectRetryInterval=10;connectRetryCount=1;maxResultBuffer=-1;sendTemporalDataTypesAsStringForBulkCopy=true;delayLoadingLobs=true;useFmtOnly=false;useBulkCopyForBatchInsert=false;cancelQueryTimeout=-1;sslProtocol=TLS;jaasConfigurationName=SQLJDBCDriver;statementPoolingCacheSize=0;serverPreparedStatementDiscardThreshold=10;enablePrepareOnFirstPreparedStatementCall=false;fips=false;socketTimeout=0;authentication=NotSpecified;authenticationScheme=nativeAuthentication;xopenStates=false;sendTimeAsDatetime=true;replication=false;trustStoreType=JKS;trustServerCertificate=true;TransparentNetworkIPResolution=true;serverNameAsACE=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;queryTimeout=-1;packetSize=8000;multiSubnetFailover=false;loginTimeout=15;lockTimeout=-1;lastUpdateCount=true;encrypt=true;disableStatementPooling=true;databaseName=plataforma;columnEncryptionSetting=Disabled;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;
+	User: userfrank
+	Database: Microsoft SQL Server  Version: 16.00.1130
+	Driver: Microsoft JDBC Driver 10.2 for SQL Server  Version: 10.2.0.0
+[EL Fine]: connection: 2024-11-12 14:06:39.664--ServerSession(127791068)--Thread(Thread[main,5,main])--/file:/C:/Users/Frank/Documents/NetBeansProjects/practica3/target/classes/_plataformaPU login successful
+[EL Fine]: moxy: 2024-11-12 14:06:39.791--Thread(Thread[main,5,main])--SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@f5c79a6
+[EL Fine]: moxy: 2024-11-12 14:06:39.806--Thread(Thread[main,5,main])--SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@51a06cbe
+[EL Fine]: moxy: 2024-11-12 14:06:39.825--Thread(Thread[main,5,main])--SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@344561e0
+[EL Fine]: moxy: 2024-11-12 14:06:39.845--Thread(Thread[main,5,main])--SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@4d9d1b69
+[EL Fine]: moxy: 2024-11-12 14:06:39.865--Thread(Thread[main,5,main])--SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@77b21474
+[EL Fine]: moxy: 2024-11-12 14:06:39.884--Thread(Thread[main,5,main])--SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@1fe8d51b
+[EL Fine]: moxy: 2024-11-12 14:06:39.901--Thread(Thread[main,5,main])--SAXParserFactory instance: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl@60d84f61
+[EL Fine]: sql: 2024-11-12 14:06:40.334--ServerSession(127791068)--Connection(1139609587)--Thread(Thread[main,5,main])--SELECT CODIGO, APELLIDO, NOMBRE, UNIVERSIDAD, CONTRASENIA, EMAIL FROM ESTUDIANTE
+]]></system-out>
+  </testcase>
+</testsuite>

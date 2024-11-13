@@ -49,7 +49,7 @@ byte[] imagen2;
     
     @AfterEach
     public void tearDown() {
-     bolsa = null; // Limpiamos la instancia de bolsa para evitar efectos colaterales entre pruebas
+     bolsa = null; 
         curso1 = null;
         curso2 = null;
     
@@ -57,43 +57,43 @@ byte[] imagen2;
 
  @Test
     public void testAgregarCurso() {
-        // Agregamos el primer curso a la bolsa
+        
         bolsa.agregarCurso(curso1);
 
-        // Verificamos que el curso haya sido agregado a la bolsa
+     
         assertTrue(bolsa.getCursos().contains(curso1), "El curso debería estar en la bolsa de compras.");
     }
       @Test
     public void testNoAgregarCursoDuplicado() {
-        // Agregamos el primer curso a la bolsa
+       
         bolsa.agregarCurso(curso1);
-        // Intentamos agregar el mismo curso de nuevo
+      
         bolsa.agregarCurso(curso1);
 
-        // Verificamos que la bolsa solo tenga un curso (no duplicado)
+        
         assertEquals(1, bolsa.getCursos().size(), "La bolsa no debe contener duplicados.");
     }
 
     @Test
     public void testRemoverCurso() {
-        // Agregamos dos cursos a la bolsa
+       
         bolsa.agregarCurso(curso1);
         bolsa.agregarCurso(curso2);
 
-        // Removemos el curso1 de la bolsa
+       
         bolsa.removerCurso(curso1.getCodigo());
 
-        // Verificamos que la bolsa ya no contenga el curso1
+      
         assertFalse(bolsa.getCursos().contains(curso1), "El curso1 debería haber sido eliminado.");
     }
 
     @Test
     public void testTotalImporte() {
-        // Agregamos dos cursos a la bolsa
+        
         bolsa.agregarCurso(curso1);
         bolsa.agregarCurso(curso2);
 
-        // Verificamos que el total importe sea correcto (100 + 150 = 250)
+       
         assertEquals(250.0, bolsa.totalimporte(), "El total importe no es correcto.");
     }
     

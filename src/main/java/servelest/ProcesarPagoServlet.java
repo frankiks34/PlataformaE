@@ -45,7 +45,7 @@ public class ProcesarPagoServlet extends HttpServlet {
         
         response.setContentType("application/json");
 
-        // Leer el JSON de la solicitud
+       
         JSONObject json = new JSONObject(request.getReader().lines().reduce("", String::concat));
         String paymentMethodId = json.getString("paymentMethodId");
         double total = json.getDouble("total");
@@ -56,17 +56,17 @@ public class ProcesarPagoServlet extends HttpServlet {
         
         
         try {
-            // Crear el PaymentIntent con el método de pago y el monto
+           
             PaymentIntent paymentIntent = pagoService.crearPaymentIntentConReturnUrl(paymentMethodId, total);
 
-            // Construir la respuesta JSON
+       
             JSONObject responseData = new JSONObject();
             responseData.put("success", true);
             responseData.put("paymentIntentId", paymentIntent.getId()); // Añadir el paymentIntentId
             responseData.put("clientSecret", paymentIntent.getClientSecret()); // Añadir clientSecret para confirmar el pago
             responseData.put("total", total); // Enviar el total en unidades de moneda
 
-            // Enviar respuesta al cliente
+            
             response.getWriter().write(responseData.toString());
 
         } catch (StripeException e) {

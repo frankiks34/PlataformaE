@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="BolsaComprasTest" time="0.117" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="BolsaComprasTest" time="0.089" tests="4" errors="0" skipped="0" failures="0">
   <properties>
+    <property name="netbeans.deploy" value="true"/>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
@@ -8,6 +9,7 @@
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
+    <property name="exec.appArgs" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="America/Lima"/>
     <property name="os.name" value="Windows 10"/>
@@ -15,9 +17,9 @@
     <property name="user.country" value="PE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Frank\AppData\Local\Temp\surefire2698018990271896967\surefirebooter129559267409907461.jar C:\Users\Frank\AppData\Local\Temp\surefire2698018990271896967 2024-11-12T12-49-04_529-jvmRun1 surefire6119540606655251484tmp surefire_07572924064774653888tmp"/>
+    <property name="sun.java.command" value="C:\Users\Frank\AppData\Local\Temp\surefire14924723123790599653\surefirebooter3916249713566477670.jar C:\Users\Frank\AppData\Local\Temp\surefire14924723123790599653 2024-11-13T14-55-15_440-jvmRun1 surefire15867963570709567351tmp surefire_07314251170392729567tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="BolsaComprasTest"/>
+    <property name="exec.vmArgs" value=""/>
     <property name="surefire.test.class.path" value="C:\Users\Frank\Documents\NetBeansProjects\practica3\target\test-classes;C:\Users\Frank\Documents\NetBeansProjects\practica3\target\classes;C:\Users\Frank\.m2\repository\org\json\json\20210307\json-20210307.jar;C:\Users\Frank\.m2\repository\jakarta\platform\jakarta.jakartaee-api\8.0.0\jakarta.jakartaee-api-8.0.0.jar;C:\Users\Frank\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\10.2.0.jre8\mssql-jdbc-10.2.0.jre8.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.core\2.7.12\org.eclipse.persistence.core-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.asm\9.4.0\org.eclipse.persistence.asm-9.4.0.jar;C:\Users\Frank\.m2\repository\com\stripe\stripe-java\28.0.0\stripe-java-28.0.0.jar;C:\Users\Frank\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.antlr\2.7.12\org.eclipse.persistence.antlr-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa\2.7.12\org.eclipse.persistence.jpa-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.jpql\2.7.12\org.eclipse.persistence.jpa.jpql-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.moxy\2.7.12\org.eclipse.persistence.moxy-2.7.12.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\jakarta.persistence\2.2.3\jakarta.persistence-2.2.3.jar;C:\Users\Frank\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.modelgen.processor\2.7.12\org.eclipse.persistence.jpa.modelgen.processor-2.7.12.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Frank\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Frank\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Frank\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Frank\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Frank\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Frank"/>
@@ -31,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Frank\AppData\Local\Temp\surefire2698018990271896967\surefirebooter129559267409907461.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Frank\AppData\Local\Temp\surefire14924723123790599653\surefirebooter3916249713566477670.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
@@ -58,14 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testNoAgregarCursoDuplicado" classname="BolsaComprasTest" time="0.046"/>
-  <testcase name="testTotalImporte" classname="BolsaComprasTest" time="0.014">
-    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: El total importe no es correcto. ==> expected: <250.0> but was: <300.0>
-	at BolsaComprasTest.testTotalImporte(BolsaComprasTest.java:97)
-]]></failure>
-  </testcase>
-  <testcase name="testAgregarCurso" classname="BolsaComprasTest" time="0.002"/>
-  <testcase name="testRemoverCurso" classname="BolsaComprasTest" time="0.004">
+  <testcase name="testNoAgregarCursoDuplicado" classname="BolsaComprasTest" time="0.036"/>
+  <testcase name="testTotalImporte" classname="BolsaComprasTest" time="0.003"/>
+  <testcase name="testAgregarCurso" classname="BolsaComprasTest" time="0.004"/>
+  <testcase name="testRemoverCurso" classname="BolsaComprasTest" time="0.003">
     <system-out><![CDATA[Curso eliminado: CURSOPRUEABA
 ]]></system-out>
   </testcase>

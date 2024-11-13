@@ -68,7 +68,7 @@
     if (error) {
         document.getElementById('card-errors').textContent = error.message;
     } else {
-        // Crear PaymentIntent con el método de pago
+               // Crear PaymentIntent con el método de pago
         const response = await fetch('ProcesarPagoServlet', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
